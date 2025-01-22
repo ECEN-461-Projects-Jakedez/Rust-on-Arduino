@@ -1,34 +1,25 @@
-blinky-demo
-===========
+# Rust-on-Arduino
+## Overview
 
-Rust project for the _Arduino Uno_.
+This Project is a demonstration of a basic setup for how to program an Arduino Uno with Rust, rather than some of the more common alternatives, such as with C/C++
 
-## Build Instructions
-1. Install prerequisites as described in the [`avr-hal` README] (`avr-gcc`, `avr-libc`, `avrdude`, [`ravedude`]).
+This project demonstrates some basic Arduino Functionality, as well as takes advantage of tools to integrate a Rust development environment into the Arduino Ecosystem.
 
-2. Run `cargo build` to build the firmware.
 
-3. Run `cargo run` to flash the firmware to a connected board.  If `ravedude`
-   fails to detect your board, check its documentation at
-   <https://crates.io/crates/ravedude>.
+[Software Demo Video](https://youtu.be/voxy5S3Zu6A)
 
-4. `ravedude` will open a console session after flashing where you can interact
-   with the UART console of your board.
+## Development Environment
 
-[`avr-hal` README]: https://github.com/Rahix/avr-hal#readme
-[`ravedude`]: https://crates.io/crates/ravedude
+This project was developed using the Visual Studio Code IDE while taking advantage of the Rahix AVR HAL tools
 
-## License
-Licensed under either of
+## Useful Websites
 
- - Apache License, Version 2.0
-   ([LICENSE-APACHE](LICENSE-APACHE) or <http://www.apache.org/licenses/LICENSE-2.0>)
- - MIT license
-   ([LICENSE-MIT](LICENSE-MIT) or <http://opensource.org/licenses/MIT>)
 
-at your option.
+- [Git Hub - AVR HAL](https://github.com/Rahix/avr-hal)
+- [Rust - Getting Started](https://www.rust-lang.org/learn/get-started)
+- [Arduino Uno Docs](https://docs.arduino.cc/hardware/uno-rev3/#tutorials)
 
-## Contribution
-Unless you explicitly state otherwise, any contribution intentionally submitted
-for inclusion in the work by you, as defined in the Apache-2.0 license, shall
-be dual licensed as above, without any additional terms or conditions.
+## Future Work
+
+- More I/O Functionality
+- Use of TTY serial output from Arduino
