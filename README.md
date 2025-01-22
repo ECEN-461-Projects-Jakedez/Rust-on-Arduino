@@ -1,24 +1,34 @@
-# Rust-on-Arduino
-## Overview
+blinky-demo
+===========
 
-This Project is a demonstration of a basic setup for how to program an Arduino Uno with Rust, rather than some of the more common alternatives, such as with C/C++
+Rust project for the _Arduino Uno_.
 
-This project demonstrates some basic Arduino Functionality, as well as takes advantage of tools to integrate a Rust development environment into the Arduino Ecosystem.
+## Build Instructions
+1. Install prerequisites as described in the [`avr-hal` README] (`avr-gcc`, `avr-libc`, `avrdude`, [`ravedude`]).
 
+2. Run `cargo build` to build the firmware.
 
-[Software Demo Video](https:\\my.video.link\placeholder)
+3. Run `cargo run` to flash the firmware to a connected board.  If `ravedude`
+   fails to detect your board, check its documentation at
+   <https://crates.io/crates/ravedude>.
 
-## Development Environment
+4. `ravedude` will open a console session after flashing where you can interact
+   with the UART console of your board.
 
-This project was developed using the Visual Studio Code IDE while taking advantage of the
+[`avr-hal` README]: https://github.com/Rahix/avr-hal#readme
+[`ravedude`]: https://crates.io/crates/ravedude
 
-## Useful Websites
+## License
+Licensed under either of
 
+ - Apache License, Version 2.0
+   ([LICENSE-APACHE](LICENSE-APACHE) or <http://www.apache.org/licenses/LICENSE-2.0>)
+ - MIT license
+   ([LICENSE-MIT](LICENSE-MIT) or <http://opensource.org/licenses/MIT>)
 
-- [Git Hub - AVR HAL](https://github.com/Rahix/avr-hal)
-- [Rust - Getting Started](https://www.rust-lang.org/learn/get-started)
-- [Arduino Uno Docs](https://docs.arduino.cc/hardware/uno-rev3/#tutorials)
+at your option.
 
-## Future Work
-
-t
+## Contribution
+Unless you explicitly state otherwise, any contribution intentionally submitted
+for inclusion in the work by you, as defined in the Apache-2.0 license, shall
+be dual licensed as above, without any additional terms or conditions.
